@@ -1,11 +1,12 @@
 from dataclasses import dataclass
 
-@dataclass
+
+@dataclass(frozen=True)
 class Competition:
     
     competition_id: int
     competition_name: str
-    competition_international: bool
+    country_name: str
     competition_gender: str
     competition_youth: bool
-    country_name: str
+    competition_international: bool
